@@ -1,0 +1,11 @@
+{
+  "name": "@getrefuge/sync",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "@supabase/supabase-js": "^2",
+    "@getrefuge/crypto": "workspace:*",
+    "@getrefuge/shared-schema": "workspace:*"
+  },
+  "devDependencies": { "typescript": "^5" }
+}

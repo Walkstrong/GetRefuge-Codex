@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "getrefuge-codex",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "main": "@tanstack/react-start/server-entry",
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS"
+  },
+  "vars": {
+    "VITE_SUPABASE_URL": "https://szufqoobfarcbmqkmqsk.supabase.co",
+    "VITE_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN6dWZxb29iZmFyY2JtcWttcXNrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg1NzQyNzIsImV4cCI6MjA5NDE1MDI3Mn0.n6OUq6SmySWB3u7MUyXF-jD73k0icbSHRDOqZFoqI18"
+  }
+}

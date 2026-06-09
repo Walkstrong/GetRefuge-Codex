@@ -1,0 +1,9 @@
+{
+  "name": "getrefuge",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r --if-present build",
+    "test": "pnpm -r --if-present test",
+    "lint": "pnpm -r --if-present typecheck && pnpm -r --if-present ts:check"
+  }
+}

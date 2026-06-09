@@ -1,0 +1,9 @@
+{
+  "name": "@getrefuge/shared-schema",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "zod": "^3"
+  },
+  "devDependencies": { "typescript": "^5" }
+}

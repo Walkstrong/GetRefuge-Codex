@@ -1,0 +1,105 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.output/
+.vinxi/
+.tanstack/
+
+# Cloudflare Wrangler local state
+.wrangler/
+**/.wrangler/
+
+# Vite temp + cache
+**/app.config.timestamp_*.js
+**/vite.config.timestamp_*.js
+.vite/
+**/.vite/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Expo
+**/.expo/
+**/.expo-shared/
+
+# Android build artifacts
+**/android/.gradle/
+**/android/build/
+**/android/app/build/
+**/android/.cxx/
+**/android/local.properties
+**/android/app/debug.keystore
+**/android/app/release.keystore
+*.jks
+*.keystore
+
+# iOS build artifacts
+**/ios/build/
+**/ios/Pods/
+**/ios/*.xcworkspace/xcuserdata/
+**/ios/*.xcodeproj/xcuserdata/
+**/ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+*.lcov
+
+# Temp
+tmp/
+.tmp/
+
+# Diagnostic outputs
+tree_output.txt
+apply-*.sh
+
+dummy-data.json
+
+.dev.vars
+
+# Claude Code local settings
+.claude/
+
+# Sensitive architecture docs
+docs/architecture.md
+
+# Private planning docs
+AGENTS.md
+docs/architecture.md
+docs/codebase-map.md
+docs/local-ai-integration-spec.md
+docs/litert-references.md
+docs/progress-tracker-v2.md
+
+# Obsidian config (left over from initial setup, ignore even though we're not using Obsidian)
+.obsidian/
