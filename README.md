@@ -2,9 +2,9 @@
 
 Offline-first crisis intelligence and community response tooling for Malaysia.
 
-GetRefuge is a Malaysia-first hackathon project for turning scattered crisis
-signals into a clear, confidence-scored view of what is happening, what help is
-needed, and which reports are still uncertain.
+GetRefuge is a Malaysia-first project for turning scattered crisis signals into
+a clear, confidence-scored view of what is happening, what help is needed, and
+which reports are still uncertain.
 
 The goal is not to replace official systems such as NADMA, JKM, JPS,
 METMalaysia, Bomba, local councils, myCuaca, RakanMET, Public InfoBanjir, Portal
