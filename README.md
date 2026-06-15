@@ -2,10 +2,10 @@
 
 Offline-first crisis intelligence and community response tooling for Malaysia.
 
-GetRefuge helps field teams, community responders, NGOs, and local coordinators
-collect ground reports when connectivity is poor, turn scattered public signals
-into usable operational intelligence, and generate clear situation summaries for
-fast-moving crises.
+GetRefuge helps Malaysians, field teams, community responders, NGOs, and local
+coordinators understand what is happening during a crisis. It combines official
+alerts, community reports, public signals, offline field updates, aid requests,
+and coordinator workflows into one clean, confidence-scored crisis view.
 
 The core idea is simple: during floods, landslides, outbreaks, outages, or other
 community emergencies, people should not have to rely only on stale portals,
@@ -23,7 +23,9 @@ official alerts, evacuation centre records, rainfall, water levels, warnings, an
 agency response.
 
 GetRefuge sits below and around those systems as a field and community
-intelligence layer:
+intelligence layer. It should include relevant official and public information,
+but its value is not simply republishing another alert feed. Its value is turning
+fragmented information into decisions people can act on:
 
 - Capture structured reports from the ground when internet coverage is weak.
 - Combine official feeds, community reports, public posts, news, and volunteer
@@ -38,6 +40,30 @@ intelligence layer:
   data.
 
 The key product promise is operational clarity under bad connectivity.
+
+## Product Positioning
+
+GetRefuge should be the crisis app Malaysians open when they need to know what
+is happening nearby, what help is needed, and which updates can be trusted.
+
+The product should be all-in-one enough to be useful during a real crisis, while
+remaining clear about its role:
+
+- Official systems remain the authority for official warnings and agency data.
+- GetRefuge brings those signals into a better user experience alongside
+  community reports, local responder updates, public posts, and field reports.
+- GetRefuge focuses on crisis operations: hazards, needs, resources, access
+  routes, stale information, duplicate reports, confidence levels, and action
+  summaries.
+- GetRefuge should not claim that AI determines truth. AI should assist with
+  extraction, clustering, source comparison, freshness checks, confidence scoring,
+  and human review.
+
+Malaysia already has public weather and disaster apps such as myCuaca, RakanMET,
+Public InfoBanjir, Portal Bencana, MyDIMS, and related agency portals. GetRefuge
+must differentiate through reliability, offline-first reporting, low-bandwidth
+sync, cleaner UX, needs coordination, and a stronger crisis workflow across
+official, community, and field data.
 
 ## Target Use Cases
 
@@ -98,6 +124,23 @@ architecture:
 - Structured WhatsApp/SMS export fallback for areas where app sync is unavailable.
 - Public/community signal ingestion with AI-assisted extraction, geocoding,
   deduplication, and human review.
+
+## Monetization Direction
+
+GetRefuge should not depend on government procurement as the first business
+model. Government adoption may be possible later, but early traction should come
+from organizations that can move faster:
+
+- NGO, mosque, church, temple, campus, and volunteer-group dashboards.
+- CSR and corporate emergency-response programs.
+- Employers with factories, plantations, logistics fleets, construction sites, or
+  remote staff.
+- White-label community response deployments for local groups or state-level
+  partners.
+- Sponsored public-good access funded by foundations, telcos, insurers, banks,
+  or corporate disaster-relief budgets.
+- Privacy-safe aggregate crisis intelligence for qualified responders, handled
+  carefully and never as raw household data.
 
 ## Security And Privacy Boundaries
 
