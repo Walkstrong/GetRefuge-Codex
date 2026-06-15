@@ -95,6 +95,7 @@ docs/architecture.md
 
 # Private planning docs
 AGENTS.md
+docs/internal/
 docs/architecture.md
 docs/codebase-map.md
 docs/local-ai-integration-spec.md

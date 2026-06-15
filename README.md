@@ -2,214 +2,140 @@
 
 Offline-first crisis intelligence and community response tooling for Malaysia.
 
-GetRefuge helps Malaysians, field teams, community responders, NGOs, and local
-coordinators understand what is happening during a crisis. It combines official
-alerts, community reports, public signals, offline field updates, aid requests,
-and coordinator workflows into one clean, confidence-scored crisis view.
+GetRefuge is a Malaysia-first hackathon project for turning scattered crisis
+signals into a clear, confidence-scored view of what is happening, what help is
+needed, and which reports are still uncertain.
 
-The core idea is simple: during floods, landslides, outbreaks, outages, or other
-community emergencies, people should not have to rely only on stale portals,
-WhatsApp rumours, news fragments, or road-app comments to understand what is
-happening around them.
+The goal is not to replace official systems such as NADMA, JKM, JPS,
+METMalaysia, Bomba, local councils, myCuaca, RakanMET, Public InfoBanjir, Portal
+Bencana, or MyDIMS. Those systems remain the authority for official alerts,
+forecasts, agency records, and emergency response.
 
-## Malaysia Crisis Response Direction
+GetRefuge complements them with an operations layer for communities, NGOs,
+volunteers, and local coordinators.
 
-GetRefuge is being refocused from a generic humanitarian Monitoring and
-Evaluation prototype into a Malaysia-first crisis response system.
+## Problem
 
-The product is not meant to replace NADMA, JKM, JPS, MetMalaysia, Bomba, local
-councils, or other official systems. Those systems remain the authority for
-official alerts, evacuation centre records, rainfall, water levels, warnings, and
-agency response.
+During Malaysian crises, people often rely on fragmented sources:
 
-GetRefuge sits below and around those systems as a field and community
-intelligence layer. It should include relevant official and public information,
-but its value is not simply republishing another alert feed. Its value is turning
-fragmented information into decisions people can act on:
+- official portals and agency apps,
+- WhatsApp and Telegram groups,
+- social media posts,
+- news updates,
+- road-app comments,
+- local volunteer reports,
+- word of mouth from nearby communities.
 
-- Capture structured reports from the ground when internet coverage is weak.
-- Combine official feeds, community reports, public posts, news, and volunteer
-  updates into one operational view.
-- Label reports by freshness, source, location confidence, and verification
-  status.
-- Cluster duplicate reports so many noisy updates become one actionable
-  incident.
-- Help coordinators see hazards, access issues, needs, resources, and unresolved
-  requests.
-- Generate concise BM/English situation reports from aggregated, privacy-aware
-  data.
+Those sources can be stale, duplicated, noisy, hard to verify, or unavailable in
+low-coverage areas. In places such as Sabah and Sarawak, reports from affected
+communities may also be delayed because internet coverage is weak or absent.
 
-The key product promise is operational clarity under bad connectivity.
+The practical problem is not just lack of information. It is lack of clear,
+fresh, trusted, actionable information.
 
-## Product Positioning
+## Solution
 
-GetRefuge should be the crisis app Malaysians open when they need to know what
-is happening nearby, what help is needed, and which updates can be trusted.
+GetRefuge helps responders and communities collect, structure, and interpret
+crisis information even when connectivity is poor.
 
-The product should be all-in-one enough to be useful during a real crisis, while
-remaining clear about its role:
+A working demo should show:
 
-- Official systems remain the authority for official warnings and agency data.
-- GetRefuge brings those signals into a better user experience alongside
-  community reports, local responder updates, public posts, and field reports.
-- GetRefuge focuses on crisis operations: hazards, needs, resources, access
-  routes, stale information, duplicate reports, confidence levels, and action
-  summaries.
-- GetRefuge should not claim that AI determines truth. AI should assist with
-  extraction, clustering, source comparison, freshness checks, confidence scoring,
-  and human review.
+- offline field reporting for hazards, blocked routes, shelter status, and aid
+  requests,
+- low-bandwidth sync when a device regains signal,
+- a map and incident feed with freshness and confidence labels,
+- community and field reports alongside relevant official/public signals,
+- duplicate report clustering,
+- BM/English situation summaries for coordinators,
+- exports for NGOs, campus responders, local groups, or volunteer teams.
 
-Malaysia already has public weather and disaster apps such as myCuaca, RakanMET,
-Public InfoBanjir, Portal Bencana, MyDIMS, and related agency portals. GetRefuge
-must differentiate through reliability, offline-first reporting, low-bandwidth
-sync, cleaner UX, needs coordination, and a stronger crisis workflow across
-official, community, and field data.
+The key product promise is:
+
+> Operational clarity under bad connectivity.
+
+## Target Users
+
+GetRefuge is designed for:
+
+- Malaysians affected by floods, landslides, outages, road disruptions, public
+  health crises, and community emergencies,
+- rural and low-coverage communities in Sabah, Sarawak, and other underserved
+  areas,
+- local NGOs and volunteer groups,
+- community leaders and local coordinators,
+- campus response teams,
+- CSR and corporate relief teams,
+- groups supporting B40 households, elderly people, OKU communities, and other
+  vulnerable residents.
 
 ## Target Use Cases
 
-GetRefuge is designed for Malaysian community response scenarios such as:
+Initial Malaysia-focused crisis workflows:
 
-- Floods and flash floods.
-- Landslides and slope failures.
-- Road closures, fallen trees, broken bridges, submerged routes, and access
-  disruption.
-- Evacuation centre and temporary shelter status.
-- Food, water, medicine, transport, baby supplies, elderly care, OKU support, and
-  welfare-check requests.
-- Haze, heat, water outages, power outages, telecom disruption, and public health
-  support.
-- Sabah and Sarawak rural response where reports may be delayed by weak or absent
-  network coverage.
+- flood and flash-flood reports,
+- landslide and slope-failure reports,
+- blocked roads, fallen trees, broken bridges, submerged routes, and access
+  disruption,
+- evacuation centre and temporary shelter status,
+- food, water, medicine, transport, baby supplies, elderly care, OKU support, and
+  welfare-check requests,
+- haze, heat, water outages, power outages, telecom disruption, and public health
+  support,
+- store-and-forward reporting from rural or low-coverage communities.
 
-The strongest current scenario is an East Malaysia or flood-response workflow:
+## Differentiation
 
-1. A field worker records household needs, road conditions, photos, GPS, and
-   timestamps offline.
-2. The app stores reports locally and keeps working without a stable connection.
-3. When the device later reaches weak signal, Wi-Fi, or another sync point, queued
-   reports are uploaded.
-4. The dashboard clusters and maps the updates.
-5. Coordinators receive a concise situation summary showing affected households,
-   blocked access routes, urgent needs, stale reports, and confidence levels.
+Malaysia already has official and public disaster apps. GetRefuge should not be
+another alert portal.
 
-## What It Includes
+GetRefuge differentiates by focusing on:
 
-- Calculator-style decoy app entry with PIN unlock.
-- Offline-first mobile reporting for incident reports and household/community
-  needs assessments.
-- Encrypted record storage and sync.
-- Optional on-device AI checks that keep the original report unchanged.
-- Optional image checks that can flag whether a supporting photo appears to match
-  or mismatch the written report.
-- Local briefing from recent records stored on the phone.
-- HQ dashboard with KPIs, filters, map, charts, record review, and exports.
-- AI analyst and SitRep drafting from schema metadata or aggregate summaries.
-- Form Studio preview for rapid field forms such as needs checks, shelter
-  assessment, and protection/welfare follow-up.
+- **offline-first field capture**: reports can be created before stable internet
+  exists,
+- **community ground truth**: field workers and local responders can capture what
+  is happening before it reaches official systems,
+- **freshness and confidence**: reports are marked as recent, stale, verified,
+  corroborated, unverified, or disputed,
+- **needs coordination**: responders can see who needs food, water, medicine,
+  transport, shelter, or welfare checks,
+- **low-bandwidth operation**: text and coordinates can sync first, with images
+  deferred until better connectivity,
+- **clean crisis UX**: a decision-first map, feed, and coordinator dashboard
+  instead of cluttered status pages,
+- **AI-assisted triage**: AI extracts locations, hazards, timestamps, requests,
+  and duplicate reports while keeping human review and source transparency.
 
-## Planned Malaysia Response Modules
+## Responsible AI
 
-These modules are the next product layer on top of the current GetRefuge
-architecture:
+GetRefuge should not claim that AI determines truth during a crisis.
 
-- Crisis mode templates for floods, landslides, road access, shelters, supplies,
-  medical needs, and welfare checks.
-- Freshness labels: live, recent, stale, unknown.
-- Confidence labels: verified, corroborated, likely, unverified, disputed.
-- Source labels: official feed, trained volunteer, community member, public post,
-  news, unknown source.
-- Low-bandwidth sync that sends text and coordinates first, thumbnails later, and
-  full photos only when requested or on better connectivity.
-- Store-and-forward reporting for Sabah, Sarawak, and other low-coverage areas.
-- Structured WhatsApp/SMS export fallback for areas where app sync is unavailable.
-- Public/community signal ingestion with AI-assisted extraction, geocoding,
-  deduplication, and human review.
+AI support should help with:
 
-## Monetization Direction
+- extracting location, hazard, severity, timestamp, source, and requested help
+  from messy reports,
+- clustering duplicate public or field reports,
+- comparing reports against nearby official or community signals,
+- scoring freshness and confidence,
+- generating BM/English coordinator summaries.
 
-GetRefuge should not depend on government procurement as the first business
-model. Government adoption may be possible later, but early traction should come
-from organizations that can move faster:
+High-impact or uncertain reports should stay reviewable by humans. The system
+should show why a report is considered verified, corroborated, unverified,
+stale, or disputed.
 
-- NGO, mosque, church, temple, campus, and volunteer-group dashboards.
-- CSR and corporate emergency-response programs.
-- Employers with factories, plantations, logistics fleets, construction sites, or
-  remote staff.
-- White-label community response deployments for local groups or state-level
-  partners.
-- Sponsored public-good access funded by foundations, telcos, insurers, banks,
-  or corporate disaster-relief budgets.
-- Privacy-safe aggregate crisis intelligence for qualified responders, handled
-  carefully and never as raw household data.
+## Current Prototype
 
-## Security And Privacy Boundaries
+The existing GetRefuge codebase already includes pieces that can support this
+pivot:
 
-GetRefuge is not production-grade crisis response or humanitarian security
-software yet. It implements privacy-preserving architecture patterns, but it has
-not been independently audited and should not be used to protect real people in
-high-risk environments without significant hardening.
-
-Privacy is not the main pitch for the Malaysia crisis-response direction. The
-main pitch is operational clarity when information is fragmented and connectivity
-is poor. Privacy still matters because field reports may contain phone numbers,
-exact locations, medical needs, children, elderly people, OKU status, migrant or
-refugee status, and other sensitive welfare details.
-
-What the current baseline provides:
-
-- Field records are encrypted before sync.
-- Supabase and Cloudflare store encrypted records, not report plaintext.
-- Mobile AI assistance runs locally on the Android device when configured.
-- HQ query planning receives analyst questions and schema metadata, not
-  decrypted record bodies.
-- SitRep drafting receives aggregate counts, trends, and suppressed small groups,
-  not names, record IDs, exact locations, or raw notes.
-- Authorized teams can still review full records when they need case-level
-  detail.
-
-What it does not claim:
-
-- It does not protect against a compromised phone, browser, laptop, extension,
-  operating system, or screen capture.
-- It is not a substitute for a formal security audit, deployment threat model, or
-  production endpoint controls.
-- It is not yet hardened with SQLCipher, hardware-backed keys, managed devices,
-  audit logs, step-up authorization, or production RBAC.
-- It does not make automated truth claims from social media. AI support should
-  triage, extract, cluster, and score confidence while preserving source
-  transparency and human review.
-
-## AI Support
-
-**Mobile path**
-
-- Text inference is exposed through a native Android local AI bridge.
-- Image checks use the LiteRT-LM Android integration when an image model is
-  installed on the device.
-- Default local model paths:
-  - Text: `/data/local/tmp/llm/local-ai.task`
-  - Image: `/data/local/tmp/llm/local-ai-image.litertlm`
-- AI checks are advisory. The report save and sync path remains independent of
-  AI output.
-
-**HQ path**
-
-- OpenRouter is used for optional dashboard query planning and SitRep drafting.
-- Configure `OPENROUTER_API_KEY`.
-- Optionally configure `OPENROUTER_MODEL` or comma-separated
-  `OPENROUTER_MODEL_IDS`.
-- Query planning uses safe schema metadata instead of decrypted record text.
-- Situation Reports use aggregate counts, trends, and privacy-filtered summaries.
-- Tiny groups are hidden or bucketed before SitRep drafting by default.
-
-Future Malaysia-response AI work should focus on:
-
-- Extracting location, hazard, severity, timestamp, source, and requested help
-  from messy reports.
-- Deduplicating and clustering many posts about the same incident.
-- Scoring freshness and confidence without presenting AI output as confirmed
-  truth.
-- Producing BM/English coordinator summaries and public-safe updates.
+- offline-first mobile reporting,
+- encrypted record storage and sync,
+- incident and household/community assessment flows,
+- optional on-device AI checks,
+- image support,
+- local briefings from records stored on the phone,
+- HQ dashboard with KPIs, filters, maps, charts, record review, and exports,
+- aggregate SitRep drafting from privacy-aware summaries,
+- Form Studio preview for rapid field forms.
 
 ## Tech Stack
 
